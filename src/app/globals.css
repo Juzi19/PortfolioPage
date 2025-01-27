@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerlink{
+  margin: 0.33rem;
+}
+.op-link:hover{
+  opacity: 0.85;
+}
+.headerlink:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+}
+
+.visibletransition{
+  animation: fadeIn 0.5s ease-in-out forwards;
+
+}
+.visibletransition4{
+  animation: fadeIn 1.5s ease-in-out forwards;
+
+}
+.visibletransition2{
+  animation: dropIn 0.5s ease-in-out;
+}
+.invisibletransition2{
+  animation: dropOut 0.25s forwards;
+}
+.invisibletransition3{
+  animation: dropOut 0.5s forwards;
+}
+.invisibletransition{
+  visibility: hidden;
+}
+
+.standardlink{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jagged-line {
+  width: 100%;
+  height: 1.5rem;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="10"%3E%3Cpath d="M0 0 L5 5 L10 0 L15 5 L20 0" stroke="%231E3A8A" stroke-width="1" fill="transparent" /%3E%3C/svg%3E') repeat-x;
+  background-size: 1.5rem 1.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Startpunkt leicht unterhalb */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Zielpunkt */
+  }
+}
+
+@keyframes dropIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes dropOut{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    
+  }
+}
