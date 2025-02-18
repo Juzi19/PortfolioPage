@@ -24,7 +24,7 @@ export default function CircleAnimation(){
     const [contact_visible, setContactVisible] = useState(false);
     const [whitebackground, setWhiteBackground] = useState(false);
     const [start, setStart] = useState(true);
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
 
     useEffect(() => {
         width = window.innerWidth;

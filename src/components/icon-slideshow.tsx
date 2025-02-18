@@ -8,14 +8,14 @@ export default function IconsSlideshow(props:{icons:string[][]}){
     const icons = props.icons
     //Initialisiert den state für alle icons
     const [icons_left, setIconsLeft] = useState(icons.map((icon, index)=>({name: icon[1], state: (index*distance)+42.9, moving: true})))
-    let queue:number[] = []
+    const queue:number[] = []
     //Indizes der icons, die sich bewegen
 
     //State nach oben zählen
     function moveIcons(speed=0.05){
         setIconsLeft((icons_left)=>{
             //Kopie der icons
-            let updatedIconsLeft = [...icons_left]
+            const updatedIconsLeft = [...icons_left]
             let pos_last_item = 0
             for(let i = 0; i < updatedIconsLeft.length; i++){
                 //Überprüft ob item am ende angekommen ist

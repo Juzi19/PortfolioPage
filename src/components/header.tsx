@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useTranslation } from "@/translations/provider";
 
 export default function Header(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
 
     return(
         <header className="fixed w-full z-[100]">

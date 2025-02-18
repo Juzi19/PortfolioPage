@@ -2,9 +2,9 @@
 import Link from "next/link"
 import { useTranslation } from "@/translations/provider"
 import IconsSlideshow from "@/components/icon-slideshow"
-export default function nofrogHomepage(){
+export default function NofrogHomepage(){
     const icons = [['/react.png', 'react'],['/html.png','html'], ['/css.png', 'css'],["/node.png", 'node'], ['/mongo.png', 'mongo']]
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     return(
         <div className="pt-[10vh]">
             <div className="p-4 flex md:flex-row flex-col">

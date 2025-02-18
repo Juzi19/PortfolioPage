@@ -8,7 +8,7 @@ import { useTranslation } from "@/translations/provider";
 export default function Contactform(){
     //Logic to fetch the csrfToken
     const [csrfToken, setCsrfToken] = useState(" ");
-    const{translations, changeLanguage} = useTranslation();
+    const{translations} = useTranslation();
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
     
@@ -51,6 +51,7 @@ export default function Contactform(){
                 const data = await response.json(); // expects json format
                 setCsrfToken(data.csrfToken);
             } catch (error) {
+              console.log(error)
             }
         }
 

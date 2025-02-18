@@ -5,7 +5,7 @@ import { useTranslation } from "@/translations/provider"
 import Head from "next/head"
 
 export default function Projects(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     const project1 = {
         headline: translations.project1_headline,
         text: translations.project1_text,
@@ -41,6 +41,15 @@ export default function Projects(){
         link: 'More',
         backgroundColor: 'bg-white'
       };
+
+      const project5 = {
+        headline: translations.aa_headline,
+        text: translations.aa_text,
+        imageURL: '/aa.avif',
+        linkURL: '/projects/academy-app',
+        link: 'More',
+        backgroundColor: 'bg-white'
+      };
       
     return(
         <div className="pt-[10vh] flex items-center justify-center flex-col">
@@ -60,20 +69,23 @@ export default function Projects(){
             </div>
             <Line></Line>
             <div className="visibletransition4">
-                <Projectcard props={project1}></Projectcard>
-            </div>
-            <Line></Line>
-
-            <div className="visibletransition4">
-                <Projectcard props={project2}></Projectcard>
+                <Projectcard props={project5}></Projectcard>
             </div>
             <Line></Line>
             <div className="visibletransition4">
                 <Projectcard props={project3}></Projectcard>
             </div>
             <Line></Line>
+            <div className="visibletransition4">
+                <Projectcard props={project2}></Projectcard>
+            </div>
+            <Line></Line>
             <div className="visibletransition4 mb-6">
                 <Projectcard props={project4}></Projectcard>
+            </div>
+            <Line></Line>
+            <div className="visibletransition4">
+                <Projectcard props={project1}></Projectcard>
             </div>
 
         </div>

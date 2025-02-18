@@ -2,8 +2,8 @@
 
 import Link from "next/link"
 import { useTranslation } from "@/translations/provider"
-export default function portfolio(){
-    const {translations, changeLanguage} = useTranslation();
+export default function Portfolio(){
+    const {translations} = useTranslation();
     return(
         <div>
             <div className="pt-[12vh] flex min-h-[84vh] items-center flex-col">

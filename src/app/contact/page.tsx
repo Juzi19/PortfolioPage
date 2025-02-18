@@ -4,7 +4,7 @@ import Head from "next/head"
 import Contactform from "@/components/Contactform"
 import Connect from "@/components/connect"
 export default function Contact(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     return(
         <div className="text-white  pt-[12vh]">
             <Head>

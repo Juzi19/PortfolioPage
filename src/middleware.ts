@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { getSession, startSession } from "../lib/auth";
 
-export async function middleware(req: NextRequest){    
+export async function middleware(){    
     const isAuthenticated = await getSession();
     if (!isAuthenticated){
         //if not authenticated, start a session

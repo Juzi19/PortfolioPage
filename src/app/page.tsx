@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import Head from 'next/head';
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Contactform from "@/components/Contactform";
 import { useTranslation } from "@/translations/provider";
 
@@ -17,7 +17,7 @@ export default function Home() {
   const [aboutvisible, setAboutVisible] = useState(false);
   const [contactvisible, setContactVisible] = useState(false);
 
-  const {translations, changeLanguage} = useTranslation();
+  const {translations} = useTranslation();
 
   return (
     <div>

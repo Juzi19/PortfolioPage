@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "@/translations/provider";
 
 export default function Highscore(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     const[rgtext, setrgText] = useState(translations.load);
     useEffect(()=>{
         async function getData() {

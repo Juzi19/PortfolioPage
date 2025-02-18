@@ -27,6 +27,7 @@ export async function POST(req:Request) {
         csrfToken:string
     }
 
+
     let {email, subject, body, privacy, honeypot, csrfToken}: FormFormat= await req.json();
 
     const cookies = req.headers.get('cookie');

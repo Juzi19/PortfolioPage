@@ -71,6 +71,10 @@ export async function getCsrfToken_SessionId(id:any){
 
 export async function endSession(){
     const user_cookies = cookies();
+    const session = await getSession();
+    if (session) {
+        await redis.del(session.id); // delete session from redis
+    }
     (await user_cookies).set('session', '',{expires: new Date(0)})
 }
 

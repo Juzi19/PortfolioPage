@@ -3,7 +3,7 @@
 import { useTranslation } from "@/translations/provider"
 
 export default function Imprint(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     return(
         <div className="pt-[12vh] flex flex-col min-h-[100vh] items-center justify-center text-center">
             <h1>{translations.imprint}</h1>

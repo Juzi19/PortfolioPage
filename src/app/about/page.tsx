@@ -7,7 +7,7 @@ import Connect from "@/components/connect"
 import { useTranslation } from "@/translations/provider"
 
 export default function About(){
-    const {translations, changeLanguage} = useTranslation()
+    const {translations} = useTranslation()
     return(
         <div className="relative ">
             <Head>
@@ -109,7 +109,7 @@ export default function About(){
                             <Milestone props={{
                                 headline: translations.jan25,
                                 text: translations.jan25t,
-                                imageURL: ['/next.png', 'redis.png']
+                                imageURL: ['/next.png', 'redis.png', 'docker.png']
                             }}></Milestone>
                         </div>
 
@@ -127,7 +127,7 @@ export default function About(){
                 </div>
                 <div className="relative w-[95%] flex pt-6">
                     <div className="w-full flex bg-gray-300 p-4 rounded-xl text-center">
-                        <p>{translations.personalProjects} <a href='/projects' className='font-bold'>{translations.ppp}</a>{translations.explore}</p>
+                        <p>{translations.personalProjects} <Link href='/projects' className='font-bold'>{translations.ppp}</Link>{translations.explore}</p>
                     </div>
                 </div>
                 <img className="w-[30vh] py-8" src="target.png" alt="Target and arrow" />

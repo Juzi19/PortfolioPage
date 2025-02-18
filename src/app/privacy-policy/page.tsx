@@ -2,7 +2,7 @@
 import { useTranslation } from "@/translations/provider"
 
 export default function PrivacyPolicy(){
-    const {translations, changeLanguage} = useTranslation();
+    const {translations} = useTranslation();
     return(
         
 
