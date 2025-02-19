@@ -5,7 +5,6 @@ export async function middleware(){
     const isAuthenticated = await getSession();
     if (!isAuthenticated){
         //if not authenticated, start a session
-        console.log("Start session");
         await startSession();
     }
 

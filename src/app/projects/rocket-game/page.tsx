@@ -9,6 +9,7 @@ const Highscore = dynamic(() => import("./@highscore/page"), {
 
 export default function RocketGame(){
     const {translations} = useTranslation();
+    
     return(
         <div className="pt-[12vh] flex flex-col">
             <h1 className="text-center text-2xl font-bold p-4 pb-6">{translations.rg}</h1>

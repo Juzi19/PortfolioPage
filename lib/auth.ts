@@ -2,7 +2,7 @@ import { SignJWT,jwtVerify } from "jose";
 import { cookies } from "next/headers";
 import redis from "../lib/redis";
 
-const secretkey = 'secret'; //has to be sotred in env file
+const secretkey = process.env.SECRET; //has to be sotred in env file
 //Converting to a uint8array
 const key = new TextEncoder().encode(secretkey);
 
@@ -49,7 +49,7 @@ export async function startSession() {
     //Save the session in a cookie
     const user_cookies:any = await cookies();
     //  secure:true in production
-    user_cookies.set('session', session, {expires, httpOnly:true,samesite:'Strict', secure: false});
+    user_cookies.set('session', session, {expires, httpOnly:true,samesite:'Strict', secure: true});
 
     //Save the session to redis and generate a csrf token, valid for 2 hours
     await redis.set(id, csrfToken);
