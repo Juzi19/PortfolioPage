@@ -27,9 +27,9 @@ export default function CmsNofrog(){
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-col items-center justify-center">
                 <h2 className="text-2xl font-bold p-2">{translations.cmsYourTurnTitle}</h2>
-                <p>{translations.cmsTryApp}</p>
-                <p>{translations.cmsUsername}: Josh</p>
-                <p>{translations.cmsPassword}: Hurra123!</p>
+                <p className="text-center">{translations.cmsTryApp}</p>
+                <p className="text-center">{translations.cmsUsername}: Josh</p>
+                <p className="text-center">{translations.cmsPassword}: Hurra123!</p>
             </div>
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-row items-center justify-center mb-4">

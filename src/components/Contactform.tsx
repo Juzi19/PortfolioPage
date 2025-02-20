@@ -63,11 +63,11 @@ export default function Contactform(){
             <div className="relative rounded-xl flex  items-center justify-center min-h-[75vh] w-full  bg-blue-900">
                 <form onSubmit={handleSubmit} className="relative text-white flex flex-col justify-center items-center p-4">
                     <label htmlFor="mail">Mail:</label>
-                    <input type="email" name="mail" id="mail" className="m-1 p-1 text-black w-[50vw] rounded " required/>
+                    <input type="email" name="mail" id="mail" className="m-1 p-1 text-black w-[80vw] sm:w-[50vw] rounded " required/>
                     <label htmlFor="subject">{translations.subject}:</label>
-                    <input type="text" id="subject" name="subject" className="m-1 p-1 text-black rounded w-[50vw]" required/>
+                    <input type="text" id="subject" name="subject" className="m-1 p-1 text-black rounded w-[80vw] sm:w-[50vw]" required/>
                     <label htmlFor="body">{translations.mess}:</label>
-                    <textarea name="body" id="body" className=" m-1 p-1 rounded text-black w-[50vw] h-[30vh]" required></textarea>
+                    <textarea name="body" id="body" className=" m-1 p-1 rounded text-black w-[80vw] sm:w-[50vw] h-[30vh]" required></textarea>
                     <label className="w-full text-center">
                         <input type="checkbox" name="privacy" className="mr-1 mt-2" required />
                         {translations.iag} {` `}

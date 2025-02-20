@@ -8,7 +8,7 @@ import IconsSlideshow from "./icon-slideshow";
 
 export default function CircleAnimation(){
     const icons1 = [['/html.png', 'HTML'], ['/css.png', 'css'],['tailwind.png', 'Tailwind'],['/js.png', 'JavaScript'], ['/react.png', 'React'],['/next.png', 'Next']]
-    const icons2 = [['/node.png', 'Node JS'], ['/django.png', 'Django'],['python.png', 'Python'], ['/mongo.png', 'Mongo'], ['/mysql.png', 'MySQL'], ['/redis.png', 'Redis']]
+    const icons2 = [['/node.png', 'Node JS'], ['/django.png', 'Django'],['python.png', 'Python'], ['/mongo.png', 'Mongo'], ['/mysql.png', 'MySQL'], ['/redis.png', 'Redis'], ['/docker.png', 'Docker']]
 
     const canvasRef = useRef<HTMLCanvasElement | null>(null); // Erstelle eine Referenz auf das Canvas
     let width = window.innerWidth;
@@ -107,16 +107,16 @@ export default function CircleAnimation(){
   }, [window.innerHeight, window.innerWidth]);
     return(
         <div>
-            <h2  className={`fixed z-30 flex items-center justify-center w-[100vw] top-[15vh] text-2xl font-bold text-black  ${start ? 'visible':'invisibletransition2'}`}>{translations.scrolldown}</h2>
+            <h2  className={`fixed z-30 flex items-center justify-center w-[100vw] top-[15vh] text-2xl font-bold text-black text-center  ${start ? 'visible':'invisibletransition2'}`}>{translations.scrolldown}</h2>
 
             <div className="fixed top-[10vh] w-full h-[90vh]">
                 <canvas ref={canvasRef} className="w-full h-[90vh]"></canvas>
-                <div className="fixed sm:top-[28vh] left-[10vw] text-white sm:w-1/2 w-[80%] top-[18vh]">
+                <div className="fixed sm:top-[28vh] left-[10vw] text-white sm:w-1/2 w-[80%] top-[14vh]">
                     <h1 className="text-4xl font-bold">{translations.welcome}</h1>
                     <p className="mt-2">{translations.starttext}</p>
                 </div>
-                <div className="fixed flex justify-center sm:w-1/3 w-full top-[50%]  sm:top-[60vh] md:top-[50vh] sm:right-[6vw]">
-                <img src="/Justus.jpg" alt="Justus Zimmermann" className={`md:w-[30vh] sm:w-[25vh] w-[30vh] rounded-2xl ${justus_visible ? 'visibletransition' : 'invisibletransition'}`}/>
+                <div className="fixed flex justify-center sm:w-1/3 w-full top-[56vh]  sm:top-[60vh] md:top-[50vh] sm:right-[6vw]">
+                <img src="/Justus.jpg" alt="Justus Zimmermann" className={`md:w-[30vh] sm:w-[25vh] w-[28vh] rounded-2xl ${justus_visible ? 'visibletransition' : 'invisibletransition'}`}/>
                 </div>
             </div>
             <div className="w-full h-[415vh]">

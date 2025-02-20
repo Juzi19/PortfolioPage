@@ -21,9 +21,11 @@ export default function Footer(){
     useEffect(()=>{
         if(translations.lang=='de'){
             setDe(true);
+            setEn(false);
         }
         else{
             setDe(false);
+            setEn(true);
         }
     },[translations.lang])
 

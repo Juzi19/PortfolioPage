@@ -2,19 +2,19 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 interface TranslationContextType {
-    translations: Record<string, string>; // Annahme: Übersetzungen sind ein Dictionary von Schlüssel-Wert-Paaren
+    translations: Record<string, string>; //translations are maps
     changeLanguage: (newLang: string) => void;
 }
 
 const defaultContextValue: TranslationContextType = {
-    translations: {}, // Leeres Objekt als Standard
-    changeLanguage: () => {}, // Leere Funktion als Standard
+    translations: {}, 
+    changeLanguage: () => {}, 
 };
 
 const TranslationContext = createContext(defaultContextValue);
 
 //This component sets up the translation context, manages the current language, and loads the relevant JSON file based on the selected language.
-export function TranslationProvider({ children }:{children: ReactNode}) {
+export default function TranslationProvider({ children }:{children: ReactNode}) {
     const [translations, setTranslations] = useState({});
     const [lang, setLang] = useState("de");  
     useEffect(() => {

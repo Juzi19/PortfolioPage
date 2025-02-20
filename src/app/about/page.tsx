@@ -32,16 +32,19 @@ export default function About(){
                 </div>
                 <hr className="md:hidden my-4 bg-blue-900 relative z-40  w-full h-1"/>
                 <div className="md:w-1/2 w-full flex items-center flex-col justify-center">
-                    <img src="/Justus.jpg" className="rounded-xl w-[42%]" alt="Justus" />
+                    <img src="/Justus.jpg" className="rounded-xl w-2/3 sm:w-[42%]" alt="Justus" />
                     <p className="pt-2">{translations.location}</p>
                     <p>{translations.profession}</p>
                 </div>
             </div>
             <div className="px-4 flex flex-row justify-center items-center">
-                <div className="w-full flex h-full flex-row">
+                <div className="w-full flex h-full flex-col">
                     <div>
                         <h3 className="relative z-40 bg-white py-4 w-full flex font-bold h-[10vh]">{translations.mj}</h3>
-                        <div className="relative top-0 flex h-full">
+                    </div>
+                    <div>
+                    <div>
+                        <div className="relative top-0 flex h-full w-fit">
                             {/* Shines trough to see the background(fixed) */}
                             <div className="relative top-0 w-[2px] flex z-10 h-[92%] bg-gray-300">
                                 {/*Timespan */}
@@ -55,7 +58,7 @@ export default function About(){
                     </div>
                     
                     {/*Text div for descripbing the timeline*/}
-                    <div id="milestones" className="relative flex flex-col pt-[12vh]">
+                    <div id="milestones" className="relative flex flex-col pt-2 pl-[5vw]">
                         <div className="flex py-4">
                             <Milestone props={{
                                 headline:translations.jan24,
@@ -114,6 +117,8 @@ export default function About(){
                         </div>
 
                     </div>
+                    </div>
+                    
                     
                 </div>
             </div>

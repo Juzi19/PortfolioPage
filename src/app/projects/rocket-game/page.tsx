@@ -27,7 +27,7 @@ export default function RocketGame(){
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-col md:flex-row w-full items-center p-4">
                 <p className="md:w-1/2  w-full text-center p-4">{translations.rgdesc2}</p>
-                <div className="md:w-1/2  w-full flex flex-row justify-center md:justify-start md:flex-col items-center h-[15vh] md:h-[60vh]">
+                <div className="md:w-1/2  w-full flex justify-center md:justify-start flex-col items-center h-[80vh] md:h-[60vh] md:pt-0 pt-3 ">
                     <img src="/html.png" alt="html" className="md:h-1/5 h-2/3 p-1"/>
                     <img src="/css.png" alt="css" className="md:h-1/5 h-2/3 p-1"/>
                     <img src="/js.png" alt="javascript" className="md:h-1/5 h-2/3 p-1"/>

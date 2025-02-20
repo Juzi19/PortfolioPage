@@ -64,8 +64,8 @@ export default function Projects(){
             <div>
                 <h1 className="text-3xl font-bold p-6">Projects</h1>
             </div>
-            <div className="pb-2">
-                <p>{translations.ht}</p>
+            <div className="pb-2 w-full">
+                <p className="text-center">{translations.ht}</p>
             </div>
             <Line></Line>
             <div className="visibletransition4">

@@ -27,9 +27,8 @@ export default function Academy_App(){
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-col items-center justify-center">
                 <h2 className="text-2xl font-bold p-2 text-center">{translations.aaYourTurnTitle}</h2>
-                <p>{translations.cmsTryApp}</p>
-                <p>{translations.aaCardNumber}</p>
-                <p>{translations.aaInfo}</p>
+                <p className="text-center">{translations.aaCardNumber}</p>
+                <p className="text-center">{translations.aaInfo}</p>
             </div>
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-row items-center justify-center mb-4">

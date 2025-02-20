@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
-import { TranslationProvider } from "@/translations/provider";
+import ClientWrapper from "@/components/ClientWrapper";
+
 
 export const metadata: Metadata = {
   title: "Justus Zimmermann - Web developer",
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <TranslationProvider>
+      <ClientWrapper>
         <body>
         <Header></Header>
         <main>
@@ -27,7 +28,7 @@ export default function RootLayout({
         </main>
         <Footer></Footer>
         </body>
-      </TranslationProvider>
+      </ClientWrapper>
       
     </html>
   );
