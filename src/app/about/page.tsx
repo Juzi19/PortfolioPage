@@ -37,19 +37,19 @@ export default function About(){
                     <p>{translations.profession}</p>
                 </div>
             </div>
-            <div className="px-4 flex flex-row justify-center items-center">
-                <div className="w-full flex h-full flex-col">
+            <div className="px-4 flex flex-row justify-center items-center relative ">
+                <div className="relative w-full flex h-full flex-col">
                     <div>
                         <h3 className="relative z-40 bg-white py-4 w-full flex font-bold h-[10vh]">{translations.mj}</h3>
                     </div>
-                    <div>
-                    <div>
+                    <div className="relative flex h-full w-full">
+                    <div className="absolute flex h-full">
                         <div className="relative top-0 flex h-full w-fit">
                             {/* Shines trough to see the background(fixed) */}
-                            <div className="relative top-0 w-[2px] flex z-10 h-[92%] bg-gray-300">
+                            <div className="absolute top-0 w-[2px] flex z-10 h-[92%] bg-gray-300">
                                 {/*Timespan */}
                             </div>
-                            <div id="endtimespan" className="relative w-[3px] flex z-30 h-[8%] right-[3px] top-[92%] bg-white">
+                            <div id="endtimespan" className="absolute w-[2px] flex z-30 h-[8%] top-[92%] bg-white">
                                 {/*Ends the time span */}
                             </div>
                             <div className="fixed top-0 w-[2px] flex z-20 h-[50vh] bg-blue-900">

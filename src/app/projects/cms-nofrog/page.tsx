@@ -36,7 +36,7 @@ export default function CmsNofrog(){
                 <Link href='https://github.com' className="p-4 rounded-xl min-h-[15vh] flex justify-center items-center bg-gray-300 hover:opacity-80">
                     <img src="/github.svg" alt="github" className="w-[10vh]" />
                 </Link>
-                <Link href='https://link-to-the-deployment.com' className="p-4 rounded-xl min-h-[15vh] ml-2 flex justify-center items-center bg-blue-900 text-white font-bold hover:opacity-80">
+                <Link href='https://cms-django-latest.onrender.com/' className="p-4 rounded-xl min-h-[15vh] ml-2 flex justify-center items-center bg-blue-900 text-white font-bold hover:opacity-80">
                     {translations.exploreApp}
                 </Link>
             </div>
