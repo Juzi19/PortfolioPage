@@ -32,7 +32,7 @@ export default function Academy_App(){
             </div>
             <hr className="m-4 h-1 bg-blue-900" />
             <div className="flex flex-row items-center justify-center mb-4">
-                <Link href='https://github.com' className="p-4 rounded-xl min-h-[15vh] flex justify-center items-center bg-gray-300 hover:opacity-80">
+                <Link href='https://github.com/Juzi19/Academy_App' className="p-4 rounded-xl min-h-[15vh] flex justify-center items-center bg-gray-300 hover:opacity-80">
                     <img src="/github.svg" alt="github" className="w-[10vh]" />
                 </Link>
                 <Link href='https://academyapp-frontend-production.up.railway.app/' className="p-4 rounded-xl min-h-[15vh] ml-2 flex justify-center items-center bg-blue-900 text-white font-bold hover:opacity-80">

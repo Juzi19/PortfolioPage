@@ -26,7 +26,7 @@ export default function Portfolio(){
 
         </div>
             <div className="flex flex-row items-center justify-center mb-4">
-            <Link href='https://github.com' className="p-4 rounded-xl min-h-[15vh] flex justify-center items-center bg-gray-300 hover:opacity-80">
+            <Link href='https://github.com/Juzi19/PortfolioPage' className="p-4 rounded-xl min-h-[15vh] flex justify-center items-center bg-gray-300 hover:opacity-80">
             <img src="/github.svg" alt="github" className="w-[10vh]"/>
             </Link>
             

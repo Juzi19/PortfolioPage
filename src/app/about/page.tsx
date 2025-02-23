@@ -46,12 +46,10 @@ export default function About(){
                     <div className="absolute flex h-full">
                         <div className="relative top-0 flex h-full w-fit">
                             {/* Shines trough to see the background(fixed) */}
-                            <div className="absolute top-0 w-[2px] flex z-10 h-[92%] bg-gray-300">
+                            <div className="absolute top-0 w-[2px] flex z-10 h-full bg-gray-300">
                                 {/*Timespan */}
                             </div>
-                            <div id="endtimespan" className="absolute w-[2px] flex z-30 h-[8%] top-[92%] bg-white">
-                                {/*Ends the time span */}
-                            </div>
+                            
                             <div className="fixed top-0 w-[2px] flex z-20 h-[50vh] bg-blue-900">
                             </div>
                         </div>
