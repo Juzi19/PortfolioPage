@@ -7,7 +7,7 @@ import { useTranslation } from "@/translations/provider";
 import IconsSlideshow from "./icon-slideshow";
 
 export default function CircleAnimation(){
-    const icons1 = [['/html.png', 'HTML'], ['/css.png', 'css'],['tailwind.png', 'Tailwind'],['/js.png', 'JavaScript'], ['/react.png', 'React'],['/next.png', 'Next']]
+    const icons1 = [['/html.png', 'HTML'], ['/css.png', 'css'],['tailwind.png', 'Tailwind'],['/js.png', 'JavaScript'],['/ts.png', 'Typescript'], ['/react.png', 'React'],['/next.png', 'Next']]
     const icons2 = [['/node.png', 'Node JS'], ['/django.png', 'Django'],['python.png', 'Python'], ['/mongo.png', 'Mongo'], ['/mysql.png', 'MySQL'], ['/redis.png', 'Redis'], ['/docker.png', 'Docker']]
 
     const canvasRef = useRef<HTMLCanvasElement | null>(null); // Erstelle eine Referenz auf das Canvas
