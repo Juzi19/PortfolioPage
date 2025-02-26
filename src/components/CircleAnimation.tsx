@@ -107,7 +107,7 @@ export default function CircleAnimation(){
   }, [window.innerHeight, window.innerWidth]);
     return(
         <div>
-            <h2  className={`fixed z-30 flex items-center justify-center w-[100vw] top-[15vh] text-2xl font-bold text-black text-center  ${start ? 'visible':'invisibletransition2'}`}>{translations.scrolldown}</h2>
+            <h2  className={`fixed z-30 flex items-center justify-center w-[100vw] top-[15vh] text-2xl font-bold text-black text-center p-2  ${start ? 'visible':'invisibletransition2'}`}>{translations.scrolldown}</h2>
 
             <div className="fixed top-[10vh] w-full h-[90vh]">
                 <canvas ref={canvasRef} className="w-full h-[90vh]"></canvas>

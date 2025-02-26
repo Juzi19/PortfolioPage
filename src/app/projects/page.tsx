@@ -62,7 +62,7 @@ export default function Projects(){
                 <meta name="robots" content="index, follow" />
             </Head>
             <div>
-                <h1 className="text-3xl font-bold p-6">Projects</h1>
+                <h1 className="text-3xl font-bold p-6">{translations.projects}</h1>
             </div>
             <div className="pb-2 w-full">
                 <p className="text-center">{translations.ht}</p>
