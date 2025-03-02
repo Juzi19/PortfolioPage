@@ -15,7 +15,7 @@ export default function RocketGame(){
             <h1 className="text-center text-2xl font-bold p-4 pb-6">{translations.rg}</h1>
             <div className="p-4 flex md:flex-row flex-col">
                 <div className="md:w-1/2  w-full">
-                <video autoPlay muted loop className="rounded-xl">
+                <video autoPlay muted loop playsInline className="rounded-xl">
                 <source src="/rocket-game.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
                 </video>
@@ -25,14 +25,14 @@ export default function RocketGame(){
                 </div>
             </div>
             <hr className="m-4 h-1 bg-blue-900" />
-            <div className="flex flex-col md:flex-row w-full items-center p-4">
-                <p className="md:w-1/2  w-full text-center p-4">{translations.rgdesc2}</p>
+            <div className="flex flex-col md:flex-row w-full items-center p-4 h-fit">
+                <p className="md:w-1/2 flex w-full text-center p-4 h-fit">{translations.rgdesc2}</p>
                 <div className="md:w-1/2  w-full flex justify-center md:justify-start flex-col items-center h-[80vh] md:h-[60vh] md:pt-0 pt-3 ">
-                    <img src="/html.png" alt="html" className="md:h-1/5 h-2/3 p-1"/>
-                    <img src="/css.png" alt="css" className="md:h-1/5 h-2/3 p-1"/>
-                    <img src="/js.png" alt="javascript" className="md:h-1/5 h-2/3 p-1"/>
-                    <img src="/node.png" alt="node" className="md:h-1/5 h-2/3 p-1"/>
-                    <img src="/redis.png" alt="redis" className="md:h-1/5 h-2/3 p-1"/>
+                    <img src="/html.png" alt="html" className="h-1/5 p-1"/>
+                    <img src="/css.png" alt="css" className="h-1/5 p-1"/>
+                    <img src="/js.png" alt="javascript" className="h-1/5 p-1"/>
+                    <img src="/node.png" alt="node" className="h-1/5 p-1"/>
+                    <img src="/redis.png" alt="redis" className="h-1/5 p-1"/>
                 </div>
             </div>
             <hr className="m-4 h-1 bg-blue-900" />

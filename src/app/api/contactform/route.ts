@@ -58,7 +58,7 @@ export async function POST(req:Request) {
         subject = purify.sanitize(subject);
         body = purify.sanitize(body);
         //Add sender's information
-        body = `Neue Nachricht von: ${email} . Inhalt:`;
+        body = `Neue Nachricht von: ${email} . Inhalt: ${body}`;
 
         console.log("About to send the emails")
         //send email to host

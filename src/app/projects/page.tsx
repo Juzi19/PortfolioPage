@@ -11,7 +11,7 @@ export default function Projects(){
         text: translations.project1_text,
         imageURL: '/frog.webp',
         linkURL: '/projects/cms-nofrog',
-        link: 'More',
+        link: translations.more,
         backgroundColor: 'bg-white'
       };
       
@@ -20,7 +20,7 @@ export default function Projects(){
         text: translations.project2_text,
         imageURL: '/home.png',
         linkURL: '/projects/nofrog-homepage',
-        link: 'More',
+        link: translations.more,
         backgroundColor: 'bg-white'
       };
       
@@ -29,7 +29,7 @@ export default function Projects(){
         text: translations.project3_text,
         imageURL: '/rocket.png',
         linkURL: '/projects/rocket-game',
-        link: 'More',
+        link: translations.more,
         backgroundColor: 'bg-white'
       };
       
@@ -38,7 +38,7 @@ export default function Projects(){
         text: translations.project4_text,
         imageURL: '/pf.png',
         linkURL: '/projects/portfolio',
-        link: 'More',
+        link: translations.more,
         backgroundColor: 'bg-white'
       };
 
@@ -47,7 +47,7 @@ export default function Projects(){
         text: translations.aa_text,
         imageURL: '/aa.avif',
         linkURL: '/projects/academy-app',
-        link: 'More',
+        link: translations.more,
         backgroundColor: 'bg-white'
       };
       
