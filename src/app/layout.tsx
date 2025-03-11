@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Justus Zimmermann - Web developer",
   description: "Web developer, ready to face new, exciting challenges",
   icons: {
-    icon: "/favicon.svg",
+    icon: "./favicon.svg",
   },
 };
 
