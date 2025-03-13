@@ -5,7 +5,7 @@ export const metadata:Metadata = {
     description: "Get an overview of my latest projects",
 }
 
-export default function RootLayout({
+export default function ProjectLayout({
     children,
   }: {
     children: React.ReactNode;

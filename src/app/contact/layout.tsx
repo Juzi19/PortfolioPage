@@ -5,7 +5,7 @@ export const metadata:Metadata = {
     description: "Get in touch with me by linkedin, github or the contact form",
 }
 
-export default function RootLayout({
+export default function ContactLayout({
     children,
   }: {
     children: React.ReactNode;
