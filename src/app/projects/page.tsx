@@ -4,9 +4,18 @@ import Line from "@/components/line"
 import { useTranslation } from "@/translations/provider"
 import Head from "next/head"
 
+type Project = {
+    headline: string,
+    text: string,
+    imageURL: string,
+    linkURL: string,
+    link: string,
+    backgroundColor: string
+}
+
 export default function Projects(){
     const {translations} = useTranslation();
-    const project1 = {
+    const project1: Project = {
         headline: translations.project1_headline,
         text: translations.project1_text,
         imageURL: '/frog.webp',
@@ -15,7 +24,7 @@ export default function Projects(){
         backgroundColor: 'bg-white'
       };
       
-      const project2 = {
+      const project2: Project = {
         headline: translations.project2_headline,
         text: translations.project2_text,
         imageURL: '/home.png',
@@ -24,7 +33,7 @@ export default function Projects(){
         backgroundColor: 'bg-white'
       };
       
-      const project3 = {
+      const project3: Project = {
         headline: translations.project3_headline,
         text: translations.project3_text,
         imageURL: '/rocket.png',
@@ -33,7 +42,7 @@ export default function Projects(){
         backgroundColor: 'bg-white'
       };
       
-      const project4 = {
+      const project4: Project = {
         headline: translations.project4_headline,
         text: translations.project4_text,
         imageURL: '/pf.png',
@@ -42,7 +51,7 @@ export default function Projects(){
         backgroundColor: 'bg-white'
       };
 
-      const project5 = {
+      const project5: Project = {
         headline: translations.aa_headline,
         text: translations.aa_text,
         imageURL: '/aa.avif',
@@ -50,6 +59,15 @@ export default function Projects(){
         link: translations.more,
         backgroundColor: 'bg-white'
       };
+
+      const project6: Project = {
+        headline: translations.wstitle,
+        text: translations.wstext,
+        imageURL: '/tiny_robot.jpg',
+        linkURL: '/projects/webscraper',
+        link: translations.more,
+        backgroundColor: 'bg-white'
+      }
       
     return(
         <div className="pt-[10vh] flex items-center justify-center flex-col">
@@ -70,6 +88,10 @@ export default function Projects(){
             <Line></Line>
             <div className="visibletransition4">
                 <Projectcard props={project5}></Projectcard>
+            </div>
+            <Line></Line>
+            <div className="visibletransition4">
+                <Projectcard props={project6}></Projectcard>
             </div>
             <Line></Line>
             <div className="visibletransition4">

@@ -119,5 +119,9 @@
   "aaYourTurnTitle": "Probier die App gerne aus – mit folgenden Beispielzahldaten:",
   "aaCardNumber": "Kartennummer: 4242 4242 4242 4242",
   "aaInfo": "Gültig bis: 12/34 , CVC: 123",
-  "more": "Mehr"
+  "more": "Mehr",
+  "wstitle": "Webscraper",
+  "wsDescription":"Ein einfacher, rekursiver Webcrawler, der Websites durchsucht, zentrale Textelemente (wie Absätze) extrahiert und anhand eines einfachen Algorithmus Kontaktinformationen erkennt. Die Anwendung läuft über die Konsole: Nutzer geben eine URL ein und wählen einen Scraping-Modus (z. B. „Kontakt“). Anschließend wird die Seite durchsucht, und gefundene Informationen wie Telefonnummern, E-Mail-Adressen oder Social-Media-Profile werden direkt in der Konsole ausgegeben. Zusätzlich ist eine Anbindung an die OpenAI-API integriert, um intelligente Zusammenfassungen der Websiteinhalte zu erstellen. Auch gibt es ein Webinterface, welches neben der Möglichkeit zur Konsoleneingabe eine intuitive Steuerung ermöglicht.",
+  "wsLearning":"Bei diesem Projekt habe ich mit Node.js einen rekursiven Webcrawler entwickelt, der zentrale Inhalte von Webseiten extrahiert und dabei Kontaktinformationen wie E-Mail-Adressen, Telefonnummern oder Social-Media-Links erkennt. Die Anwendung lässt sich über die Konsole oder ein einfaches Webinterface bedienen. Nutzer geben eine URL sowie den gewünschten Modus ein (z. B. „Kontakt“), woraufhin die Seite analysiert wird. Durch die Integration der OpenAI-API kann das Tool intelligente Zusammenfassungen der Inhalte erzeugen. Besonders spannend war für mich die Umsetzung der rekursiven Logik und das Zusammenspiel aus Datenextraktion und KI-gestützter Analyse. Auch habe ich mit Testing durch jest beschäftigt.",
+  "wstext": "Ein rekursiver Webscraper, der Webseiten scrapt und KI-gestützte Zusammenfassungen erstellen kann. Die App verfügt über ein ansprechendes Benutzerinterface und eine Konsoleneingabe für die lokale Nutzung."
 }

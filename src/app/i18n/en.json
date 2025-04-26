@@ -121,5 +121,10 @@
   "aaYourTurnTitle": "Try out the app using the following test payment details:",
   "aaCardNumber": "Card number: 4242 4242 4242 4242",
   "aaInfo": "Valid until: 12/34, CVC: 123",
-  "more": "More"
+  "more": "More",
+  "wstitle": "Webscraper",
+  "wsDescription": "A simple recursive web crawler that scans websites, extracts key text elements (like paragraphs), and identifies contact information using a basic algorithm. The crawler is a console-based application where users can input a URL and choose a scraping mode (e.g., 'contact'). It then crawls the site, printing results such as phone numbers, emails, and social media profiles directly in the console. Additionally, it integrates with the OpenAI API to generate smart summaries of website content.",
+  "wsLearning":"In this project, I developed a recursive web crawler using Node.js that extracts key content from websites and identifies contact information such as email addresses, phone numbers, or social media links. The application can be operated via the console or through a simple web interface. Users enter a URL and select a desired mode (e.g., “Contact”), after which the page is analyzed. Thanks to the integration of the OpenAI API, the tool can generate intelligent summaries of the website’s content. I especially enjoyed implementing the recursive logic and combining data extraction with AI-powered analysis. I also explored jest for javascript testing.",
+  "wstext": "A recursive web scraper that scrapes websites and can generate AI-powered summaries."
+
 }
