@@ -13,7 +13,7 @@ export default function About(){
             <Head>
                 <title>About me</title>
                 <meta name="description" content="The about page lists my journey to become a fullstack developer and tells you more about my person" />
-                <meta name="keywords" content="about,Justus, web development, Fullstack, Munich, web developer" />
+                <meta name="keywords" content="about, Justus, web development, Fullstack, Munich, web developer" />
                 <meta property="og:title" content="Aboutme page" />
                 <meta property="og:description" content="Welcome to my Aboutme page." />
                 <meta name="robots" content="index, follow" />
@@ -103,7 +103,7 @@ export default function About(){
                             <Milestone props={{
                                 headline: translations.dec24,
                                 text: translations.dec24t,
-                                imageURL: ['/mysql.png']
+                                imageURL: []
                             }}></Milestone>
                         </div>
                         <div className="flex py-4">
@@ -111,6 +111,13 @@ export default function About(){
                                 headline: translations.jan25,
                                 text: translations.jan25t,
                                 imageURL: ['/next.png', 'redis.png', 'docker.png']
+                            }}></Milestone>
+                        </div>
+                        <div className="flex py-4">
+                            <Milestone props={{
+                                headline: translations.may25,
+                                text: translations.may25t,
+                                imageURL: ['/langchain.webp', '/openai.svg']
                             }}></Milestone>
                         </div>
 

@@ -68,6 +68,15 @@ export default function Projects(){
         link: translations.more,
         backgroundColor: 'bg-white'
       }
+
+      const project7: Project = {
+        headline: 'Newsmood',
+        text: translations.nmtext,
+        imageURL: '/mood.png',
+        linkURL: '/projects/newsmood',
+        link: translations.more,
+        backgroundColor: 'bg-white'
+      }
       
     return(
         <div className="pt-[10vh] flex items-center justify-center flex-col">
@@ -87,6 +96,10 @@ export default function Projects(){
             </div>
             <Line></Line>
             <div className="visibletransition4">
+                <Projectcard props={project7}></Projectcard>
+            </div>
+            <Line></Line>
+            <div className="visibletransition4">
                 <Projectcard props={project5}></Projectcard>
             </div>
             <Line></Line>
@@ -95,7 +108,7 @@ export default function Projects(){
             </div>
             <Line></Line>
             <div className="visibletransition4">
-                <Projectcard props={project3}></Projectcard>
+                <Projectcard props={project4}></Projectcard>
             </div>
             <Line></Line>
             <div className="visibletransition4">
@@ -103,7 +116,7 @@ export default function Projects(){
             </div>
             <Line></Line>
             <div className="visibletransition4 mb-6">
-                <Projectcard props={project4}></Projectcard>
+                <Projectcard props={project3}></Projectcard>
             </div>
             <Line></Line>
             <div className="visibletransition4">

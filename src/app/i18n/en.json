@@ -52,6 +52,8 @@
     "dec24t": "As the year ended, I recognized the importance of enhancing my security skills. I learned about various hacking techniques, including SQL injection, XSS, and CSRF attacks",
     "jan25": "January 2025",
     "jan25t": "To adopt a more SEO-friendly approach with React, I started learning Next.js. I also explored Redis while implementing i.e. session authentication for my applications",
+    "may25": "May 2025",
+    "may25t": "Inspired by recent advancements in AI, I worked with the OpenAI API and Langchain (Python), developing several practical applications.",
     "specialization": "I specialize in both front-end and back-end development, working with technologies like HTML, CSS, Tailwind CSS, JavaScript, React, and Next.js to craft seamless user experiences. On the back end, I utilize MongoDB, Node.js, Django, MySQL, and Redis to build secure and efficient systems.",
     "personalProjects": "Although I’m still early in my journey, I’ve dedicated myself to building a strong foundation by tackling real-world challenges through personal projects. You can explore some of the things I’ve worked on ",
     "ppp": "here.",
@@ -125,6 +127,8 @@
   "wstitle": "Webscraper",
   "wsDescription": "A simple recursive web crawler that scans websites, extracts key text elements (like paragraphs), and identifies contact information using a basic algorithm. The crawler is a console-based application where users can input a URL and choose a scraping mode (e.g., 'contact'). It then crawls the site, printing results such as phone numbers, emails, and social media profiles directly in the console. Additionally, it integrates with the OpenAI API to generate smart summaries of website content.",
   "wsLearning":"In this project, I developed a recursive web crawler using Node.js that extracts key content from websites and identifies contact information such as email addresses, phone numbers, or social media links. The application can be operated via the console or through a simple web interface. Users enter a URL and select a desired mode (e.g., “Contact”), after which the page is analyzed. Thanks to the integration of the OpenAI API, the tool can generate intelligent summaries of the website’s content. I especially enjoyed implementing the recursive logic and combining data extraction with AI-powered analysis. I also explored jest for javascript testing.",
-  "wstext": "A recursive web scraper that scrapes websites and can generate AI-powered summaries."
-
+  "wstext": "A recursive web scraper that scrapes websites and can generate AI-powered summaries.",
+  "nmtext": "Stay on top of the sentiment in your relevant news — with Newsmood, it's easy. This web app can search for relevant news based on keywords, analyze sentiment, and even export the results to Excel. Naturally, it also features responsive design and user authentication.",
+  "nmDescription": "Newsmood is a web app that scans news based on user-defined keywords and performs sentiment analysis on relevant articles. The frontend is built with Next.js, while the backend relies on a Python API that runs a custom-trained LSTM model in PyTorch. More details are available in the Newsmood app.",
+  "nmLearning": "This project was especially rewarding. I gained hands-on experience with deep learning, guided by concepts from the book 'Dive into Deep Learning'. My goal was to truly understand how these models work. On the web development side, I built a responsive Next.js app with user authentication and MongoDB integration. NewsAPI was used to fetch real-time news content."
 }
