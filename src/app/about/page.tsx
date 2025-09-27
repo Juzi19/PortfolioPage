@@ -120,6 +120,13 @@ export default function About(){
                                 imageURL: ['/langchain.webp', '/openai.svg']
                             }}></Milestone>
                         </div>
+                        <div className="flex py-4">
+                            <Milestone props={{
+                                headline: translations.oct25,
+                                text: translations.oct25t,
+                                imageURL: []
+                            }}></Milestone>
+                        </div>
 
                     </div>
                     </div>
