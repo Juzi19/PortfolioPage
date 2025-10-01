@@ -33,4 +33,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 This is my personal portfolio page, telling my story of becoming a developer. I hope that you like my user interface. If you need any further information or if you have questions, please do not hesitate to contact me.
 
 ## Contact
-If you have any questions or are interested in collaborating, please feel free to contact me at justus.zimmermann@gmx.de
+If you have any questions or are interested in collaborating, please feel free to contact me at `justus.zimmermann@gmx.de`
