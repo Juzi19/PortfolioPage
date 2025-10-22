@@ -56,9 +56,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="relative flex w-full bg-white z-40">
-        <Contactform></Contactform>
-      </div>
     </div>
   );
 }
