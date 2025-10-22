@@ -29,18 +29,18 @@ export async function sendMail({
   }) {
     try {
       await transporter.verify();
+      const info = await transporter.sendMail({
+        from: email,
+        to: sendTo,
+        subject: subject,
+        text: text,
+        html: html ? html : '',
+      });
+      console.log('Message Sent', info.messageId);
+      console.log('Mail sent to', sendTo);
+      return info;
     } catch (error) {
       console.error('Something Went Wrong', SMTP_SERVER_USERNAME, SMTP_SERVER_PASSWORD, error);
       return;
     }
-    const info = await transporter.sendMail({
-      from: email,
-      to: sendTo,
-      subject: subject,
-      text: text,
-      html: html ? html : '',
-    });
-    console.log('Message Sent', info.messageId);
-    console.log('Mail sent to', sendTo);
-    return info;
   }

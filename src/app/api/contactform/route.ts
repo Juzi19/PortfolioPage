@@ -77,7 +77,7 @@ export async function POST(req:Request) {
         })
 
         if(info && user_response){
-            console.log("Email send to", email!)
+            console.log("Email sent to", email!)
         }
         else{
             console.log("Error when sending the mail")

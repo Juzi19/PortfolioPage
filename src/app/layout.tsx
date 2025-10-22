@@ -20,16 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <body>
       <ClientWrapper>
-        <body>
         <Header></Header>
         <main>
           {children}
         </main>
         <Footer></Footer>
-        </body>
       </ClientWrapper>
-      
+    </body>
     </html>
   );
 }
