@@ -32,7 +32,7 @@
     "project4_text": "I designed my portfolio page to combine an appealing layout with an SEO-friendly approach, which is why I chose Next.js, a framework built on React. Learning about different rendering techniques and implementing a custom authentication system from scratch was challenging but rewarding. This project significantly enhanced my React skills while deepening my understanding of core authentication concepts and cookie handling.",
     "ht": "Hi there! I'm excited to share my projects with you!",
     "am": "About me",
-    "introduction": "Hi there! I'm a 18-year-old aspiring software engineer and full-stack web developer based in Munich, Germany, passionate about creating innovative and scalable solutions for real-world challenges. I thrive on learning new technologies and refining my skills to tackle complex problems. My goal is to build impactful applications that make a difference.",
+    "introduction": "Hi there! I'm a 18-year-old software engineer and freelance full-stack web developer based in Munich, Germany, passionate about creating innovative and scalable solutions for real-world challenges. I thrive on learning new technologies and refining my skills to tackle complex problems. My goal is to build impactful applications that make a difference.",
     "location": "📍 Munich, Germany",
     "profession": "💼 Fullstack",
     "mj": "My journey:",
@@ -87,7 +87,7 @@
   
   "contactTitle": "7. Contact",
   "contactText": "If you have any questions regarding the privacy policy or your personal data, you can contact us at the following email address:",
-  "email": "justus.webdev@gmail.com",
+  "email": "hi@justus-dev.de",
   "cmsTitle": "Customer Management System",
   "cmsDescription": "The nofrog Customer Management System is designed to help my fictitious web development agency manage client interactions and projects. The app includes features for project management, real-time chat, and more. It also allows you to make announcements to clients and store documents online, which can be shared with all project members. This system streamlines communication and collaboration, making it easier to manage and track project progress.",
   
