@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import Head from 'next/head';
 import Link from "next/link";
 import { useState } from "react";
-import Contactform from "@/components/Contactform";
 import { useTranslation } from "@/translations/provider";
 
 const CircleAnimation = dynamic(()=>import("../components/CircleAnimation"),{
