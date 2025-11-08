@@ -15,14 +15,6 @@ type Project = {
 
 export default function Projects(){
     const {translations} = useTranslation();
-    const project1: Project = {
-        headline: translations.project1_headline,
-        text: translations.project1_text,
-        imageURL: '/frog.webp',
-        linkURL: '/projects/cms-nofrog',
-        link: translations.more,
-        backgroundColor: 'bg-white'
-      };
       
       const project2: Project = {
         headline: translations.project2_headline,
@@ -33,14 +25,6 @@ export default function Projects(){
         backgroundColor: 'bg-white'
       };
       
-      const project3: Project = {
-        headline: translations.project3_headline,
-        text: translations.project3_text,
-        imageURL: '/rocket.png',
-        linkURL: '/projects/rocket-game',
-        link: translations.more,
-        backgroundColor: 'bg-white'
-      };
       
       const project4: Project = {
         headline: translations.project4_headline,
@@ -114,15 +98,6 @@ export default function Projects(){
             <div className="visibletransition4">
                 <Projectcard props={project2}></Projectcard>
             </div>
-            <Line></Line>
-            <div className="visibletransition4 mb-6">
-                <Projectcard props={project3}></Projectcard>
-            </div>
-            <Line></Line>
-            <div className="visibletransition4">
-                <Projectcard props={project1}></Projectcard>
-            </div>
-
         </div>
     )
 }

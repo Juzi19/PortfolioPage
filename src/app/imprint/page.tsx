@@ -30,7 +30,7 @@ export default function Imprint(){
                 <br />
                 Telefon: +49 1512 1357649
                 <br />
-                E-Mail: justus.zimmermann@gmx.de
+                E-Mail: hi@justus-dev.de
                 <br /><br />
 
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:

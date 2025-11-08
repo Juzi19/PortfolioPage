@@ -18,7 +18,7 @@ export default function Contact(){
                 <div className="m-4 flex items-center justify-center bg-white w-full ">
                 <div className="flex justify-center items-center flex-col text-center relative rounded-xl min-h-[30vh] w-full  bg-[#ffa500]">
                     <div className="p-3 flex flex-col">
-                        <p><a href="mailto: justus.zimmermann@gmx.de" className="p-1 hover:underline">justus.zimmermann@gmx.de</a>📧</p>
+                        <p><a href="mailto: hi@justus-dev.de" className="p-1 hover:underline">hi@justus-dev.de</a>📧</p>
                         <p><a href="tel:+4915121357649" className="hover:underline p-1">0049 1512 1357649</a>📞</p>
                     </div>
                     <div className="w-[30vh] bg-white rounded-xl">
