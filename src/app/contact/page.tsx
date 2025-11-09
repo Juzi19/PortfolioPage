@@ -1,19 +1,11 @@
 "use client"
 import { useTranslation } from "@/translations/provider"
-import Head from "next/head"
 import Connect from "@/components/connect"
 export default function Contact(){
     const {translations} = useTranslation();
     return(
         <div className="text-white  pt-[12vh]">
-            <Head>
-                <title>Contact</title>
-                <meta name="description" content="Contact me either via contact form or via email" />
-                <meta name="keywords" content="contact,Justus, web development, Fullstack, Munich, web developer" />
-                <meta property="og:title" content="Contact page" />
-                <meta property="og:description" content="Welcome to my Contact page." />
-                <meta name="robots" content="index, follow" />
-            </Head>
+
             <div className="relative flex w-full bg-white z-40 mt-4 min-h-[80vh]">
                 <div className="m-4 flex items-center justify-center bg-white w-full ">
                 <div className="flex justify-center items-center flex-col text-center relative rounded-xl min-h-[30vh] w-full  bg-[#ffa500]">

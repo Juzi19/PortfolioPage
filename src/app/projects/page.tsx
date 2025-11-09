@@ -2,7 +2,6 @@
 import Projectcard from "@/components/projectcard"
 import Line from "@/components/line"
 import { useTranslation } from "@/translations/provider"
-import Head from "next/head"
 
 type Project = {
     headline: string,
@@ -64,14 +63,6 @@ export default function Projects(){
       
     return(
         <div className="pt-[10vh] flex items-center justify-center flex-col">
-            <Head>
-                <title>Projects</title>
-                <meta name="description" content="I listed my projects here, to give you an overview about my last builts" />
-                <meta name="keywords" content="Projects, portfolio, webdev,Justus, web development, Fullstack, Munich, web developer" />
-                <meta property="og:title" content="Projects page" />
-                <meta property="og:description" content="Welcome to my Projects page." />
-                <meta name="robots" content="index, follow" />
-            </Head>
             <div>
                 <h1 className="text-3xl font-bold p-6">{translations.projects}</h1>
             </div>

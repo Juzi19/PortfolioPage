@@ -15,6 +15,9 @@ COPY . .
 # Build the Next.js application
 RUN npm run build
 
+# Create sitemap and robots.txt
+RUN npm run postbuild
+
 # Expose the Next.js default port
 EXPOSE 3000
 
