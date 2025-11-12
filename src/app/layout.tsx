@@ -8,6 +8,8 @@ import ClientWrapper from "@/components/ClientWrapper";
 export const metadata: Metadata = {
   title: "Justus Zimmermann - Web developer",
   description: "Web developer, ready to face new, exciting challenges",
+  keywords:"portfolio, web development, Fullstack, Munich, web developer",
+  robots: "index, follow",
   icons: {
     icon: "./favicon.svg",
   },
@@ -20,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <meta name="google-site-verification" content="JMrVysuS0pj3Zz92Dp3BTloIWlaun7QZ6RmXnIZUY7w" />
+      </head>
       <body>
       <ClientWrapper>
         <Header></Header>

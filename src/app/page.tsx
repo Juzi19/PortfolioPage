@@ -1,7 +1,6 @@
 "use client"
 
 import dynamic from "next/dynamic";
-import Head from 'next/head';
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "@/translations/provider";
@@ -20,14 +19,6 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Homepage</title>
-        <meta name="description" content="Welcome to my portfolio website. Explore my work and projects." />
-        <meta name="keywords" content="portfolio, web development, Fullstack, Munich, web developer" />
-        <meta property="og:title" content="Homepage" />
-        <meta property="og:description" content="Welcome to my homepage." />
-        <meta name="robots" content="index, follow" />
-      </Head>
       <div>
         <CircleAnimation></CircleAnimation>
       </div>
