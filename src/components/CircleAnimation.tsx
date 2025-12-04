@@ -155,7 +155,7 @@ export default function CircleAnimation(){
                 </div>
                 
             </div>
-            <Link href="/contact" className={`hover:text-gray-300 fixed shadow-[0_4px_4px_rgba(255,255,255,0.5)] flex h-1/12 z-50 bottom-[2vh] right-[5vw] bg-blue-900 text-white p-2 rounded-xl ${contact_visible ? 'visibletransition':'invisibletransition'}`}>{translations.contact} ✏️</Link>
+            <Link href="/contact" className={`hover:text-gray-300 fixed shadow-[0_4px_4px_rgba(255,255,255,0.5)] flex h-1/12 z-50 bottom-[2vh] right-4 bg-blue-900 text-white p-2 rounded-xl ${contact_visible ? 'visibletransition':'invisibletransition'}`}>{translations.contact} ✏️</Link>
         </div>
         
     )
