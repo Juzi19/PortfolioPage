@@ -36,6 +36,7 @@ export default function Footer(){
                 <img src="/can.svg.webp" onClick={()=>{changeLanguage('en'); setEn(true); setDe(false);}} alt="English" className={`${en?'hidden': 'flex'} absolute left-[2vw] h-[4vh] bottom-[1vh] hover:cursor-pointer`}/>
             </div>
             <Link href="/imprint" className="text-white headerlink font-bold">{translations.imprint}</Link>
+            <Link href="/privacy-policy" className="text-white headerlink font-bold">{translations.pp}</Link>
         </footer>
     )
 }
