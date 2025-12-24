@@ -3,7 +3,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
 import ClientWrapper from "@/components/ClientWrapper";
-
+import Script from "next/script";
+import { TrackboxxScript } from "@/scripts/TrackboxxScript";
 
 export const metadata: Metadata = {
   title: "Justus Zimmermann - Web developer",
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html>
       <head>
         <meta name="google-site-verification" content="JMrVysuS0pj3Zz92Dp3BTloIWlaun7QZ6RmXnIZUY7w" />
+        <TrackboxxScript />
       </head>
       <body>
       <ClientWrapper>
