@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
 import ClientWrapper from "@/components/ClientWrapper";
+import Script from "next/script";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,33 @@ export default function RootLayout({
     <html>
       <head>
         <meta name="google-site-verification" content="JMrVysuS0pj3Zz92Dp3BTloIWlaun7QZ6RmXnIZUY7w" />
+        <Script
+          id="trackboxx"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(d, s, id, w, f){
+                  w[f] = w[f] || function() {
+                      (w[f].q = w[f].q || []).push(arguments)
+                  };
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)){ return; }
+                  js = d.createElement(s); js.id = id;
+                  js.async = true;
+                  js.src = "https://cdn.trackboxx.info/p/tracker.js";
+                  js.onload = function(){
+                      // Trackboxx Script ist geladen – initialisieren
+                      if (w[f]) {
+                          w[f]('set', 'siteId', ${process.env.SITE_ID!});
+                          w[f]('trackPageview');
+                      }
+                  };
+                  fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'trackboxx-script', window, 'trackboxx'));
+            `,
+          }}
+        />
+
       </head>
       <body>
       <ClientWrapper>
